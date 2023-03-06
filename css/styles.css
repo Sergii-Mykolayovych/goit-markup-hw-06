@@ -679,6 +679,7 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  outline-color: var(--color-secondary-inverted);
   width: 24px;
   height: 24px;
   cursor: pointer;
@@ -697,6 +698,7 @@ img {
 .form-title {
   font-weight: 500;
   text-align: center;
+  letter-spacing: 0.02em;
   margin-bottom: 16px;
   color: var(--color-primary);
 }
@@ -709,7 +711,7 @@ img {
 .user-info {
   display: block;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   color: #8e8f99;
   margin-bottom: 4px;
@@ -741,6 +743,7 @@ img {
 }
 
 .user-comment {
+  display: block;
   width: 360px;
   height: 120px;
   outline-color: var(--color-secondary-inverted);
@@ -749,41 +752,41 @@ img {
   background-color: transparent;
   padding: 8px 16px;
   resize: none;
-  /* font-size: 12px;
-  line-height: 1.17;
-  color: rgba(117, 117, 117, 0.5); */
+  margin-bottom: 16px;
 }
 
-.privasy-container {
-  position: relative;
+.checkbox-label {
   display: flex;
-}
-
-.privacy-info {
-  padding-left: 20px;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.17;
+  color: #757575;
 }
 
 .check-input {
-  position: absolute;
   appearance: none;
 }
 
 .check-box {
-  position: absolute;
   display: inline-block;
-  height: 12px;
-  width: 12px;
-  bottom: 50%;
-  background-image: url(../images/check-off.svg);
+  height: 16px;
+  width: 16px;
+  border: 1px solid var(--color-hover);
+  border-radius: 2px;
+  margin-right: 8px;
 }
 
 .check-input:checked + .check-box {
-  background-image: url(../images/svg/check-on.svg);
+  background-size: contain;
+  background-color: var(--color-hover);
+  color: var(--color-primary-inverted);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/svg/Vector.svg);
 }
 
 .form-text {
   position: relative;
-  /* padding-left: 8px; */
   font-size: 12px;
   line-height: 1.17;
   color: #757575;
@@ -796,11 +799,8 @@ img {
   color: var(--color-secondary-inverted);
 }
 
-.button-container {
-  position: relative;
-}
-
 .button-form {
+  display: block;
   width: 169px;
   height: 56px;
   margin: 24px 96px 0 96px;
